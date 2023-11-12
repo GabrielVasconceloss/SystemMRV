@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <h2>Lista de Receituários</h2>
+
+    {% if receituarios %}
+        <ul>
+            {% for receituario in receituarios %}
+                <li>{{ receituario.paciente_nome }} - {{ receituario.medico_nome }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Nenhum receituário disponível.</p>
+    {% endif %}
+</body>
+</html>

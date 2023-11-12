@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h2>Criar Receituário</h2>
+  <form method="post" action="">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Salvar Receituário</button>
+  </form>
+</body>
+</html>
